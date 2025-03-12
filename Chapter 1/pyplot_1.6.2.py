@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib.ptplot as plt
+import matplotlib.pyplot as plt
 
 x = np.arange(0, 6, 0.1)
 y1 = np.sin(x)
