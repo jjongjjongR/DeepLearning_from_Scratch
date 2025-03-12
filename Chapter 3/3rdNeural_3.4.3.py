@@ -1,3 +1,6 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
 def init_network():
     network = {}
     network['W1'] = np.array([[0.1, 0.3, 0.5],[0.2, 0.4, 0.6]])
@@ -11,6 +14,10 @@ def init_network():
 
 def identity_function(x):
     return x
+
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
 
 def forward(network, x):
     W1, W2, W3 = network['W1'], network['W2'], network['W3']
